@@ -1,0 +1,4 @@
+#Fri Oct 12 14:41:14 CST 2018
+base.0=/home/wayne/React-Native/stronger/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/wayne/React-Native/stronger/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+            "map": [
+                {
+                    "source": "/home/wayne/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9382465dcfa930e2af94d71305a5e7b6/res/values-v22/values-v22.xml",
+                    "from": {
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,553",
+                        "endLines": "2,3,8,13",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,548,896"
+                    }
+                }
+            ]
+        }
+    ]
+}
