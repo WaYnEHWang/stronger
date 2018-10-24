@@ -1,4 +1,11 @@
 import { Navigation } from 'react-native-navigation'
+import { 
+  one,
+  two,
+  three,
+  four,
+  five,
+} from './components/images';
 
 export const goToAuth = () => Navigation.setRoot({
   root: {
@@ -12,8 +19,8 @@ export const goToAuth = () => Navigation.setRoot({
               bottomTab: {
                 fontSize: 12,
                 text: 'page1',
-                icon: require('./images/one.png')
-              }
+                icon: one
+              },
             }
           },
         },
@@ -24,8 +31,8 @@ export const goToAuth = () => Navigation.setRoot({
               bottomTab: {
                 text: 'page2',
                 fontSize: 12,
-                icon: require('./images/two.png')
-              }
+                icon: two
+              },
             }
           },
         },
@@ -36,8 +43,8 @@ export const goToAuth = () => Navigation.setRoot({
               bottomTab: {
                 text: 'page3',
                 fontSize: 12,
-                icon: require('./images/three.png')
-              }
+                icon: three
+              },
             }
           },
         },
@@ -48,8 +55,8 @@ export const goToAuth = () => Navigation.setRoot({
               bottomTab: {
                 text: 'page4',
                 fontSize: 12,
-                icon: require('./images/four.png')
-              }
+                icon: four
+              },
             }
           },
         },
@@ -57,27 +64,11 @@ export const goToAuth = () => Navigation.setRoot({
           component: {
             name: 'page5',
             options: {
-              topBar: {
-                visible: true,
-                drawBehind: true,
-                height: 20,
-                title: {
-                  text: 'The Title',
-                  color: 'red',
-                  fontSize: 13.5,
-                },
-                leftButtons: [
-                  {
-                    id: 'page5leftbutton',
-                    icon: require('./images/one.png')
-                  }
-                ]
-              },
               bottomTab: {
                 text: 'page5',
                 fontSize: 12,
-                icon: require('./images/five.png')
-              }
+                icon: five
+              },
             }
           },
         },
@@ -92,9 +83,17 @@ export const goHome = () => Navigation.setRoot({
             id: 'App',
             children: [
                 {
-                    component: {
-                        name: 'page3',
+                component: {
+                  name: 'page3',
+                  options: {
+                    topbar: {
+                      visible: true,
+                      title: {
+                        text: "Page3"
+                      },
                     }
+                  }
+                },
                 }
             ],
         }
