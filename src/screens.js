@@ -8,4 +8,5 @@ export function registerScreens() {
     Navigation.registerComponent('page3', () => require('./page3').default);
     Navigation.registerComponent('page4', () => require('./page4').default);
     Navigation.registerComponent('page5', () => require('./page5').default);
+    Navigation.registerComponent('signin', () => require('./signin').default);
 }

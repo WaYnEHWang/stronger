@@ -1,5 +1,6 @@
 
 import React, {Component} from 'react';
+import { Navigation } from 'react-native-navigation';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import {
   NavigationBar,
@@ -7,16 +8,20 @@ import {
 
 type Props = {};
 export default class Page2 extends Component<Props> {
+  constructor(props) {
+    super(props);
+    Navigation.events().bindComponent(this); // <== Will be automatically unregistered when unmounted
+  }
+
+  navigationButtonPressed({ buttonId }) {
+    // will be called when "buttonOne" is clicked
+    console.log(buttonId);
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <NavigationBar
-          title='Page2'
-          onPress={() => { console.log('2'); }}
-        />
-        <View style={{ flex: 8, backgroundColor: 'white' }}>
           <Text style={styles.welcome}>Welcome to Page2!</Text>
-        </View>
       </View>
     );
   }

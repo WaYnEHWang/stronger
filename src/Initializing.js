@@ -9,7 +9,7 @@ import {
 import { goToAuth, goHome } from './navigation'
 
 // import { USER_KEY } from './config'
-const user = 1;
+const user = 2;
 
 export default class Initialising extends React.Component {
     async componentDidMount() {

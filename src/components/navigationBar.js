@@ -22,7 +22,7 @@ class NavigationBar extends React.PureComponent<Props> {
           disabled, title,
     } = this.props;
     return (
-      <View style={styles.container}>
+      /* <View style={styles.container}>
         <View style={styles.menu}>
           <TouchableOpacity 
             onPress={this.props.onPress}
@@ -30,12 +30,12 @@ class NavigationBar extends React.PureComponent<Props> {
             <Image style={styles.image} source={menu} />
           </TouchableOpacity>
         </View>
-        <View style={styles.titleView}>
-          <Text style={styles.title}>{title}</Text>
-        </View>
+        <View style={styles.titleView}> */
+          <Text style={styles.title}>hello</Text>
+        /* </View>
         <View style={styles.other}>
         </View>
-      </View>
+      </View> */
     );
   }
 }
