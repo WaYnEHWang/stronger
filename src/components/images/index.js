@@ -5,6 +5,11 @@ const two = require('./two.png');
 const three = require('./three.png');
 const four = require('./four.png');
 const five = require('./five.png');
+const one_1x = require('./one_1x.png');
+const two_1x = require('./two_1x.png');
+const three_1x = require('./three_1x.png');
+const four_1x = require('./four_1x.png');
+const five_1x = require('./five_1x.png');
 
 export {
   menu,
@@ -13,4 +18,9 @@ export {
   three,
   four,
   five,
+  one_1x,
+  two_1x,
+  three_1x,
+  four_1x,
+  five_1x,
 };

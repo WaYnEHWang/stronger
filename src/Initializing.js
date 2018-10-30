@@ -13,11 +13,8 @@ const user = 2;
 
 export default class Initialising extends React.Component {
     async componentDidMount() {
-        if (user === 2) {
-            goHome()
-        } else {
-            goToAuth()
-        }
+        console.log('~~~~~~~~~~~~~~~~');
+        goHome();
     }
 
     render() {

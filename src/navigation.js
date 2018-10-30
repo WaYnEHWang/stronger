@@ -6,6 +6,11 @@ import {
   four,
   five,
   menu,
+  one_1x,
+  two_1x,
+  three_1x,
+  four_1x,
+  five_1x,
 } from './components/images';
 
 export const goToAuth = () => Navigation.setRoot({
@@ -23,7 +28,7 @@ export const goToAuth = () => Navigation.setRoot({
             options: {
               bottomTab: {
                 text: 'page1',
-                icon: one,
+                icon: one_1x,
               },
               topBar: {
                 background: {
@@ -54,7 +59,7 @@ export const goToAuth = () => Navigation.setRoot({
             options: {
               bottomTab: {
                 text: 'page2',
-                icon: two,
+                icon: two_1x,
               },
               topBar: {
                 background: {
@@ -85,7 +90,7 @@ export const goToAuth = () => Navigation.setRoot({
             options: {
               bottomTab: {
                 text: 'page3',
-                icon: three,
+                icon: three_1x,
               },
               topBar: {
                 background: {
@@ -116,7 +121,7 @@ export const goToAuth = () => Navigation.setRoot({
             options: {
               bottomTab: {
                 text: 'page4',
-                icon: four,
+                icon: four_1x,
               },
               topBar: {
                 background: {
@@ -147,7 +152,7 @@ export const goToAuth = () => Navigation.setRoot({
             options: {
               bottomTab: {
                 text: 'page5',
-                icon: five,
+                icon: five_1x,
               },
               topBar: {
                 background: {
