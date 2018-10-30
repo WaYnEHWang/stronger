@@ -12,6 +12,7 @@ import {
   four_1x,
   five_1x,
 } from './components/images';
+const strings = require('@strings');
 
 export const goToAuth = () => Navigation.setRoot({
   root: {
@@ -27,7 +28,7 @@ export const goToAuth = () => Navigation.setRoot({
             }],
             options: {
               bottomTab: {
-                text: 'page1',
+                text: strings.page1,
                 icon: one_1x,
               },
               topBar: {
@@ -35,7 +36,7 @@ export const goToAuth = () => Navigation.setRoot({
                   color: 'orange'
                 },
                 title: {
-                  text: 'page1',
+                  text: strings.page1,
                   alignment: 'center',
                   fontSize: 18,
                 },
@@ -66,7 +67,7 @@ export const goToAuth = () => Navigation.setRoot({
                   color: 'orange'
                 },
                 title: {
-                  text: 'page2',
+                  text: strings.page1,
                   fontSize: 18,
                   alignment: 'center',
                 },
