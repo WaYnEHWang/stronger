@@ -24,7 +24,7 @@ export default class Page1 extends Component<Props> {
                 }
               ],
               title: {
-                  text: strings.page1,
+                  text: strings.voice_asistant,
                   alignment: 'center',
                   fontSize: 18,
                 },
@@ -36,6 +36,18 @@ export default class Page1 extends Component<Props> {
     navigationButtonPressed({ buttonId }) {
         // will be called when "buttonOne" is clicked
         console.log(buttonId);
+    }
+
+    componentDidAppear() {
+        console.log('page1 appear');
+    }
+
+    componentDidMount() {
+        console.log('page1 component did mount');
+    }
+
+    componentWillMount() {
+        console.log('page1 component will mount');
     }
 
     render() {

@@ -28,7 +28,7 @@ export const goToAuth = () => Navigation.setRoot({
             }],
             options: {
               bottomTab: {
-                text: strings.page1,
+                text: strings.voice_asistant,
                 icon: one_1x,
               },
               topBar: {
@@ -36,9 +36,10 @@ export const goToAuth = () => Navigation.setRoot({
                   color: 'orange'
                 },
                 title: {
-                  text: strings.page1,
+                  text: strings.voice_asistant,
                   alignment: 'center',
                   fontSize: 18,
+                  color: 'white',
                 },
                 leftButtons: [
                   {
@@ -59,7 +60,7 @@ export const goToAuth = () => Navigation.setRoot({
             }],
             options: {
               bottomTab: {
-                text: 'page2',
+                text: strings.live,
                 icon: two_1x,
               },
               topBar: {
@@ -67,9 +68,10 @@ export const goToAuth = () => Navigation.setRoot({
                   color: 'orange'
                 },
                 title: {
-                  text: strings.page1,
+                  text: strings.live,
                   fontSize: 18,
                   alignment: 'center',
+                  color: 'white',
                 },
                 leftButtons: [
                   {
@@ -85,12 +87,12 @@ export const goToAuth = () => Navigation.setRoot({
           stack: {
             children: [{
               component: {
-                name: 'page3',
+                name: 'heatControl',
               }
             }],
             options: {
               bottomTab: {
-                text: 'page3',
+                text: strings.heat_control,
                 icon: three_1x,
               },
               topBar: {
@@ -98,9 +100,10 @@ export const goToAuth = () => Navigation.setRoot({
                   color: 'orange'
                 },
                 title: {
-                  text: 'page3',
+                  text: strings.heat_control,
                   fontSize: 18,
                   alignment: 'center',
+                  color: 'white',
                 },
                 leftButtons: [
                   {
@@ -121,7 +124,7 @@ export const goToAuth = () => Navigation.setRoot({
             }],
             options: {
               bottomTab: {
-                text: 'page4',
+                text: strings.fitness_mode,
                 icon: four_1x,
               },
               topBar: {
@@ -129,9 +132,10 @@ export const goToAuth = () => Navigation.setRoot({
                   color: 'orange'
                 },
                 title: {
-                  text: 'page4',
+                  text: strings.fitness_mode,
                   fontSize: 18,
                   alignment: 'center',
+                  color: 'white',
                 },
                 leftButtons: [
                   {
@@ -152,7 +156,7 @@ export const goToAuth = () => Navigation.setRoot({
             }],
             options: {
               bottomTab: {
-                text: 'page5',
+                text: strings.schedule_info,
                 icon: five_1x,
               },
               topBar: {
@@ -160,9 +164,10 @@ export const goToAuth = () => Navigation.setRoot({
                   color: 'orange'
                 },
                 title: {
-                  text: 'page5',
+                  text: strings.schedule_info,
                   fontSize: 18,
                   alignment: 'center',
+                  color: 'white',
                 },
                 leftButtons: [
                   {

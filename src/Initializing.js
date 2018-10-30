@@ -13,7 +13,6 @@ const user = 2;
 
 export default class Initialising extends React.Component {
     async componentDidMount() {
-        console.log('~~~~~~~~~~~~~~~~');
         goHome();
     }
 

@@ -4,11 +4,24 @@ import { Navigation } from 'react-native-navigation';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { line_menu } from './components/images';
 
+const strings = require('@strings');
 type Props = {};
 export default class Page5 extends Component<Props> {
     constructor(props) {
         super(props);
         Navigation.events().bindComponent(this); // <== Will be automatically unregistered when unmounted
+    }
+
+    componentDidAppear() {
+        console.log('page5 appear');
+    }
+
+    componentDidMount() {
+        console.log('page5 component did mount');
+    }
+
+    componentWillMount() {
+        console.log('page5 component will mount');
     }
 
     static options(passProps) {
@@ -23,7 +36,7 @@ export default class Page5 extends Component<Props> {
                 }
               ],
               title: {
-                  text: 'page1',
+                  text: strings.schedule_info,
                   alignment: 'center',
                   fontSize: 18,
                 },
