@@ -11,6 +11,10 @@ const three_1x = require('./three_1x.png');
 const four_1x = require('./four_1x.png');
 const five_1x = require('./five_1x.png');
 const line_menu = require('./line-menu.png');
+const diet_suggestion = require('./chat.png');
+const focus = require('./crosshair.png');
+const diagram = require('./diagram.png');
+const calorie = require('./fire.png');
 
 export {
   menu,
@@ -25,4 +29,8 @@ export {
   four_1x,
   five_1x,
   line_menu,
+  diet_suggestion,
+  focus,
+  diagram,
+  calorie,
 };

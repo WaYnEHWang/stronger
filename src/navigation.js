@@ -92,7 +92,7 @@ export const goToAuth = () => Navigation.setRoot({
             }],
             options: {
               bottomTab: {
-                text: strings.heat_control,
+                text: strings.calorie_control,
                 icon: three_1x,
               },
               topBar: {
@@ -100,7 +100,7 @@ export const goToAuth = () => Navigation.setRoot({
                   color: 'orange'
                 },
                 title: {
-                  text: strings.heat_control,
+                  text: strings.calorie_control,
                   fontSize: 18,
                   alignment: 'center',
                   color: 'white',
