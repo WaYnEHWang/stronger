@@ -3,6 +3,7 @@ package com.stronger;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.github.yamill.orientation.OrientationPackage;
 import com.babisoft.ReactNativeLocalization.ReactNativeLocalizationPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -37,7 +38,8 @@ public class MainApplication extends NavigationApplication {
     // No need to add RnnPackage and MainReactPackage
     return Arrays.<ReactPackage>asList(
     // eg. new VectorIconsPackage()
-      new ReactNativeLocalizationPackage()
+      new ReactNativeLocalizationPackage(),
+      new OrientationPackage(),
     );
   }
 

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Navigation } from 'react-native-navigation';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { line_menu } from './components/images';
+import Orientation from 'react-native-orientation';
 
 const strings = require('@strings');
 type Props = {};
@@ -13,15 +14,16 @@ export default class Page4 extends Component<Props> {
     }
 
     componentDidAppear() {
-        console.log('page5 appear');
+        console.log('page4 appear');
     }
 
     componentDidMount() {
-        console.log('page5 component did mount');
+        console.log('page4 component did mount');
     }
 
     componentWillMount() {
-        console.log('page5 component will mount');
+        console.log('page4 component will mount');
+        Orientation.lockToPortrait();
     }
 
     static options(passProps) {
@@ -39,6 +41,7 @@ export default class Page4 extends Component<Props> {
                   text: strings.fitness_mode,
                   alignment: 'center',
                   fontSize: 18,
+                  color: 'white'
                 },
             }
           };

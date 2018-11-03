@@ -9,4 +9,9 @@ export function registerScreens() {
     Navigation.registerComponent('page4', () => require('./page4').default);
     Navigation.registerComponent('page5', () => require('./page5').default);
     Navigation.registerComponent('signin', () => require('./signin').default);
+    Navigation.registerComponent('detection', () => require('./detection').default);
+    Navigation.registerComponent('report', () => require('./detection').default);
+    Navigation.registerComponent('calculate', () => require('./detection').default);
+    Navigation.registerComponent('suggestion', () => require('./detection').default);
+
 }

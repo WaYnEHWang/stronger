@@ -6,7 +6,7 @@
  */
 
 #import "AppDelegate.h"
-
+#import "Orientation.h"
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <ReactNativeNavigation/ReactNativeNavigation.h>
@@ -19,6 +19,9 @@
   [ReactNativeNavigation bootstrap:jsCodeLocation launchOptions:launchOptions];
   
   return YES;
+}
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+  return [Orientation getOrientation];
 }
 
 @end

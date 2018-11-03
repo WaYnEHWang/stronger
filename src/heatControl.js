@@ -9,6 +9,7 @@ import {
     diagram,
     calorie
 } from './components/images';
+import Orientation from 'react-native-orientation';
 
 const strings = require('@strings');
 type Props = {};
@@ -36,7 +37,7 @@ export default class heatControl extends Component<Props> {
     }
 
     componentDidAppear() {
-        console.log('page3 appear');
+        console.log('~~~~~~~~~~~page3 appear~~~~~~~~~~~~');
     }
 
     componentDidMount() {
@@ -45,6 +46,7 @@ export default class heatControl extends Component<Props> {
 
     componentWillMount() {
         console.log('page3 component will mount');
+        Orientation.lockToPortrait();
     }
 
     static options(passProps) {
@@ -59,9 +61,10 @@ export default class heatControl extends Component<Props> {
                 }
               ],
               title: {
-                  text: strings.heat_control,
+                  text: strings.calorie_control,
                   alignment: 'center',
                   fontSize: 18,
+                  color: 'white'
                 },
             }
           };
@@ -73,12 +76,54 @@ export default class heatControl extends Component<Props> {
         console.log(buttonId);
     }
 
+    nextPage=(page) => {
+        switch(page)
+        {
+            case 'detection':
+            console.log('~~~~~~~~~~~~~~~~~~~~~~~');
+                console.log(page);
+                Navigation.push(this.props.componentId, {
+                    component: {
+                      name: 'detection',
+                    }
+                  });
+                break;
+            case 'report':
+            console.log('~~~~~~~~~~~~~~~~~~~~~~~');
+            console.log(page);
+            Navigation.push(this.props.componentId, {
+                    component: {
+                      name: 'report',
+                    }
+                  });
+                break;
+            case 'calculate':
+            console.log('~~~~~~~~~~~~~~~~~~~~~~~');
+            console.log(page);
+            Navigation.push(this.props.componentId, {
+                    component: {
+                      name: 'calculate',
+                    }
+                  });
+                break;
+            case 'suggestion':
+            console.log('~~~~~~~~~~~~~~~~~~~~~~~');
+            console.log(page);
+            Navigation.push(this.props.componentId, {
+                    component: {
+                      name: 'suggestion',
+                    }
+                  });
+                break;
+        }
+    }
+
     render() {
         return (
             <View style={styles.container}>
                 <View style={styles.topView}>
                     <View style={styles.topContent}>
-                        <TouchableOpacity onPress={ () => { console.log(strings.calorie_detection); }}>
+                        <TouchableOpacity onPress={ () => { this.nextPage('detection'); }}>
                             <Image
                                 style={styles.topContentImage}
                                 source={focus}
@@ -87,7 +132,7 @@ export default class heatControl extends Component<Props> {
                         <Text style={styles.topContentTitle}>{strings.calorie_detection}</Text>
                     </View>
                     <View style={styles.topContent}>
-                        <TouchableOpacity onPress={() => { console.log(strings.report_search); }}>
+                        <TouchableOpacity onPress={() => { this.nextPage('report'); }}>
                             <Image
                                 style={styles.topContentImage}
                                 source={diagram}
@@ -96,7 +141,7 @@ export default class heatControl extends Component<Props> {
                         <Text style={styles.topContentTitle}>{strings.report_search}</Text>
                     </View>
                     <View style={styles.topContent}>
-                        <TouchableOpacity onPress={() => { console.log(strings.calorie_calculate); }}>
+                        <TouchableOpacity onPress={() => { this.nextPage('calculate'); }}>
                             <Image
                                 style={styles.topContentImage}
                                 source={calorie}
@@ -105,7 +150,7 @@ export default class heatControl extends Component<Props> {
                         <Text style={styles.topContentTitle}>{strings.calorie_calculate}</Text>
                     </View>
                     <View style={styles.topContent}>
-                        <TouchableOpacity onPress={() => { console.log(strings.diet_suggestion); }}>
+                        <TouchableOpacity onPress={() => { this.nextPage('suggestion'); }}>
                             <Image
                                 style={styles.topContentImage}
                                 source={diet_suggestion}

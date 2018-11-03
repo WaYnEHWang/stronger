@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import { Navigation } from 'react-native-navigation';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { line_menu } from './components/images';
+import Orientation from 'react-native-orientation';
 
 const strings = require('@strings');
 type Props = {};
@@ -22,6 +23,7 @@ export default class Page2 extends Component<Props> {
 
   componentWillMount() {
     console.log('page2 component will mount');
+    Orientation.lockToPortrait();
   }
 
   static options(passProps) {
@@ -39,6 +41,7 @@ export default class Page2 extends Component<Props> {
               text: strings.live,
               alignment: 'center',
               fontSize: 18,
+              color: 'white'
             },
         }
       };

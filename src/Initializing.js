@@ -4,7 +4,8 @@ import {
     Text,
     StyleSheet,
     AsyncStorage
-} from 'react-native'
+} from 'react-native';
+import Orientation from 'react-native-orientation';
 
 import { goToAuth, goHome } from './navigation'
 
@@ -12,6 +13,9 @@ import { goToAuth, goHome } from './navigation'
 const user = 2;
 
 export default class Initialising extends React.Component {
+    componentWillMount() {
+        Orientation.lockToPortrait();
+    }
     async componentDidMount() {
         goHome();
     }

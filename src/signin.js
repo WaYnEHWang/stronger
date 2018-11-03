@@ -1,10 +1,14 @@
 
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import { goToAuth, goHome } from './navigation'
+import { goToAuth, goHome } from './navigation';
+import Orientation from 'react-native-orientation';
 
 type Props = {};
 export default class SignIn extends Component<Props> {
+    componentWillMount() {
+        Orientation.lockToPortrait();
+ }
 
   logout = async () => {
     try {
@@ -36,6 +40,6 @@ const styles = StyleSheet.create({
     welcome: {
         fontSize: 20,
         textAlign: 'center',
-        margin: 10,
+        marginTop: 50,
     },
 });
