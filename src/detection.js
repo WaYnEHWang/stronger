@@ -27,6 +27,19 @@ componentDidMount() {
   console.log('~~~~~~~~~~~~~~~~~~~~~');
  console.log('detection component did mount');
 }
+static options(passProps) {
+    return {
+      topBar: {
+        title: {
+            text: strings.calorie_detection,
+            alignment: 'center',
+            fontSize: 18,
+            color: 'white'
+        },
+      }
+    };
+}
+
   render() {
     return (
       <View style={styles.container}>

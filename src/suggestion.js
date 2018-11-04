@@ -27,6 +27,19 @@ componentDidMount() {
   console.log('~~~~~~~~~~~~~~~~~~~~~');
  console.log('suggestion component did mount');
 }
+static options(passProps) {
+  return {
+    topBar: {
+      title: {
+          text: strings.diet_suggestion,
+          alignment: 'center',
+          fontSize: 18,
+          color: 'white'
+        },
+    }
+  };
+}
+
   render() {
     return (
       <View style={styles.container}>

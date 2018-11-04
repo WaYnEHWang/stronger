@@ -23,7 +23,7 @@ export default class Page2 extends Component<Props> {
 
   componentWillMount() {
     console.log('page2 component will mount');
-    Orientation.lockToPortrait();
+    // Orientation.lockToPortrait();
   }
 
   static options(passProps) {

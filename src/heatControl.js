@@ -42,11 +42,12 @@ export default class heatControl extends Component<Props> {
 
     componentDidMount() {
         console.log('page3 component did mount');
+        console.log(this.props.componentId);
     }
 
     componentWillMount() {
         console.log('page3 component will mount');
-        Orientation.lockToPortrait();
+        // Orientation.lockToPortrait();
     }
 
     static options(passProps) {
@@ -77,11 +78,10 @@ export default class heatControl extends Component<Props> {
     }
 
     nextPage=(page) => {
+        
         switch(page)
         {
             case 'detection':
-            console.log('~~~~~~~~~~~~~~~~~~~~~~~');
-                console.log(page);
                 Navigation.push(this.props.componentId, {
                     component: {
                       name: 'detection',
@@ -89,8 +89,6 @@ export default class heatControl extends Component<Props> {
                   });
                 break;
             case 'report':
-            console.log('~~~~~~~~~~~~~~~~~~~~~~~');
-            console.log(page);
             Navigation.push(this.props.componentId, {
                     component: {
                       name: 'report',
@@ -98,8 +96,6 @@ export default class heatControl extends Component<Props> {
                   });
                 break;
             case 'calculate':
-            console.log('~~~~~~~~~~~~~~~~~~~~~~~');
-            console.log(page);
             Navigation.push(this.props.componentId, {
                     component: {
                       name: 'calculate',
@@ -107,8 +103,6 @@ export default class heatControl extends Component<Props> {
                   });
                 break;
             case 'suggestion':
-            console.log('~~~~~~~~~~~~~~~~~~~~~~~');
-            console.log(page);
             Navigation.push(this.props.componentId, {
                     component: {
                       name: 'suggestion',

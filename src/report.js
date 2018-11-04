@@ -27,6 +27,20 @@ export default class report extends Component<Props> {
    console.log('~~~~~~~~~~~~~~~~~~~~~');
   console.log('report component did mount');
 }
+
+static options(passProps) {
+  return {
+    topBar: {
+      title: {
+          text: strings.report_search,
+          alignment: 'center',
+          fontSize: 18,
+          color: 'white'
+        },
+    }
+  };
+}
+
   render() {
     return (
       <View style={styles.container}>

@@ -27,6 +27,20 @@ export default class calculate extends Component<Props> {
   console.log('~~~~~~~~~~~~~~~~~~~~~');
  console.log('calculate component did mount');
 }
+
+static options(passProps) {
+  return {
+    topBar: {
+      title: {
+          text: strings.calorie_calculate,
+          alignment: 'center',
+          fontSize: 18,
+          color: 'white'
+        },
+    }
+  };
+}
+
   render() {
     return (
       <View style={styles.container}>

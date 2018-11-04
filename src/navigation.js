@@ -47,6 +47,9 @@ export const goToAuth = () => Navigation.setRoot({
                     icon: menu,
                   }
                 ],
+                layout: {
+                  orientation: ['portrait'] // An array of supported orientations
+                }
               }
             }
           }
@@ -79,6 +82,9 @@ export const goToAuth = () => Navigation.setRoot({
                     icon: menu,
                   }
                 ],
+                layout: {
+                  orientation: ['portrait'] // An array of supported orientations
+                }
               }
             }
           }
@@ -111,6 +117,9 @@ export const goToAuth = () => Navigation.setRoot({
                     icon: menu,
                   }
                 ],
+                layout: {
+                  orientation: ['portrait'] // An array of supported orientations
+                }
               }
             }
           }
@@ -143,6 +152,9 @@ export const goToAuth = () => Navigation.setRoot({
                     icon: menu,
                   }
                 ],
+                layout: {
+                  orientation: ['portrait'] // An array of supported orientations
+                }
               }
             }
           }
@@ -175,6 +187,9 @@ export const goToAuth = () => Navigation.setRoot({
                     icon: menu,
                   }
                 ],
+                layout: {
+                  orientation: ['portrait'] // An array of supported orientations
+                }
               }
             }
           }

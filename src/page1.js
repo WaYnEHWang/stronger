@@ -50,7 +50,7 @@ export default class Page1 extends Component<Props> {
 
     componentWillMount() {
         console.log('page1 component will mount');
-        Orientation.lockToPortrait();
+        // Orientation.lockToPortrait();
     }
 
     render() {
